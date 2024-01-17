@@ -1,6 +1,7 @@
 # Szakdolgozat_BTSZ - Thesis Project
 
 **Abstract**
+
 The sport of nine pin bowling is not very popular these days, even though the
 Hungarians are at the forefront internationally. This sport is extremely special, since in
 addition to the players' fight against each other, the overall performance of the team also
