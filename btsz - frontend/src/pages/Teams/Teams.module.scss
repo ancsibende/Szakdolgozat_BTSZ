@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $background-light-grey;
+  width: auto;
+
+  > * > * {
+    margin-bottom: $margin-s;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  margin: $margin-m 0;
+  font-family: inherit;
+}
+
+.pdfContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  a {
+    font-family: inherit;
+    font-style: italic;
+  }
+}

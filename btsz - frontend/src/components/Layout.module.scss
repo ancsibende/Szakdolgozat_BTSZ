@@ -1,0 +1,42 @@
+@import "src/variables";
+
+.root {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: $background-light-grey;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pageContainer {
+  overflow: hidden;
+  margin: 0 auto $margin-m;
+  border-radius: $padding-m;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: $white;
+  position: relative;
+
+  @media (min-width: $screen-size-m) {
+    width: 80%;
+    max-width: $screen-size-xl;
+  }
+
+  &.blur {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+  &.transparent {
+    background: $container-background;
+  }
+
+  .contentContainer {
+    margin: $margin-m;
+
+    @media (max-width: $screen-size-m) {
+      margin: 0;
+    }
+  }
+}

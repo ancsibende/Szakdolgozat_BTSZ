@@ -1,0 +1,51 @@
+@import "../../variables.scss";
+
+.loaderWrapper.loading {
+  border-radius: 35px;
+  background: linear-gradient(
+    270deg,
+    transparent,
+    transparent,
+    #c5c9d2,
+    transparent,
+    transparent
+  );
+  background-size: 400% 400%;
+  animation: loadingAnimation 2s linear infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loaderWrapper.error {
+  background-color: #c5c9d2;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.topAlign {
+    align-items: flex-start;
+    div {
+      margin: 16px;
+    }
+  }
+
+  div {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    overflow: hidden;
+    color: $blue;
+  }
+}

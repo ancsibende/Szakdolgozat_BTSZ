@@ -1,0 +1,97 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $background-light-grey;
+  width: auto;
+
+  > * > * {
+    margin-bottom: $margin-s;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  margin: $margin-m 0;
+  font-family: inherit;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deleteContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: $orange;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: $black;
+  cursor: pointer;
+}
+
+.newsCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @media (max-width: 600px) {
+    .newsCard {
+      width: calc(40% - 16px);
+    }
+  }
+
+  @media (max-width: $screen-size-xs) {
+    .newsCard {
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+.newsCard {
+  width: calc(30% - 16px);
+  margin: 8px;
+
+  &.highlighted {
+    background-color: #ffeeba;
+    border: 2px solid #ffc107;
+  }
+}
+
+.submitContainer {
+  display: flex;
+  padding-top: 12px;
+  justify-content: center;
+}
+
+.editorContainer {
+  height: fit-content;
+}
+
+.richTextContainer {
+  border: 1px solid $grey-light;
+}
+
+.radioContainer {
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    label {
+      padding-left: 12px;
+    }
+  }
+}

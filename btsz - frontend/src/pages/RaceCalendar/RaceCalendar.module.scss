@@ -1,0 +1,301 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $background-light-grey;
+  width: auto;
+
+  > * > * {
+    margin-bottom: $margin-s;
+  }
+}
+
+.label {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: large;
+}
+
+.margin-bottom {
+  margin-bottom: $margin-s;
+  margin-right: $margin-s;
+}
+
+.subtitle {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  margin: $margin-m 0;
+  font-family: inherit;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: $orange;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: $black;
+  cursor: pointer;
+}
+
+.finalResult {
+  font-size: $font-size-xl;
+  font-weight: bolder;
+}
+
+.teamSum {
+  font-size: 1.325rem;
+  font-weight: bold;
+}
+
+.teamSetSum {
+  font-size: $font-size-l;
+  font-weight: 500;
+}
+
+.delButton {
+  display: flex;
+  padding: 12px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0000000a;
+  }
+}
+
+.bulkTimeframesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.bulkTimeframe {
+  display: block;
+
+  .bulkTimeframeTitle {
+    margin-left: $margin-xxs;
+    margin-bottom: $margin-s;
+  }
+
+  .pillContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.radioContainer {
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    label {
+      padding-left: 12px;
+    }
+  }
+}
+
+.timeContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.dateContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.submitContainer {
+  display: flex;
+  padding-top: 12px;
+  justify-content: center;
+}
+
+.detailsContainer {
+  margin-top: $margin-s;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deleteButton {
+  border: none;
+  color: $white;
+  width: fit-content;
+  padding: $padding-xs;
+  margin-right: $margin-xs;
+  margin-top: $margin-s;
+  background-color: $system-error;
+
+  svg {
+    margin: 0 0 0 $margin-xs;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.sendButton {
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: $white;
+  background-color: $blue;
+
+  svg {
+    margin: 0 0 0 $margin-xs;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.deleteModalContent {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $screen-size-m) {
+    min-width: unset;
+  }
+}
+
+.deleteModalQuestion {
+  font-size: $font-size-m;
+  color: $grey-deep-dark;
+  margin: 0 0 2.25rem;
+}
+
+.deleteModalButtons {
+  display: flex;
+  justify-content: center;
+
+  > * {
+    margin-right: $margin-xs;
+  }
+
+  button {
+    cursor: pointer;
+    display: flex;
+    font-size: $font-size-xs;
+    font-weight: 500;
+    color: $white;
+    background-color: $grey-lighter;
+    padding: $padding-s;
+    border: none;
+    border-radius: 10px;
+  }
+
+  button:last-of-type {
+    background-color: $system-error;
+  }
+}
+
+.calendarContainer {
+  margin-left: $margin-s;
+  display: block;
+  width: 100%;
+
+  .calendarGroup {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .calendar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  :global(.react-calendar__navigation) {
+    background-color: transparent;
+    color: $secondary-blue;
+    display: flex;
+
+    button {
+      cursor: pointer;
+      color: $black;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  :global(.react-calendar__month-view__weekdays) {
+    background-color: transparent;
+    border-radius: 5px;
+  }
+
+  :global(.react-calendar__month-view__weekdays__weekday) {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    abbr {
+      text-decoration: none;
+    }
+  }
+
+  .day {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+
+    &.selectedDate {
+      border: 2px solid black;
+    }
+
+    &:hover {
+      border: 1px solid $text-input;
+    }
+
+    &:disabled {
+      pointer-events: none;
+    }
+
+    &.pink {
+      background-color: $calendar-pink;
+      color: white;
+    }
+
+    &.blue {
+      background-color: $calendar-blue;
+      color: white;
+    }
+
+    &.half {
+      background: linear-gradient(
+        to bottom,
+        $calendar-pink 20%,
+        $calendar-blue
+      );
+      color: white;
+    }
+  }
+
+  @media (min-width: $screen-size-l) {
+    display: inline-flex;
+  }
+}

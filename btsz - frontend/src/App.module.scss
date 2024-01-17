@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+.App {
+  text-align: center;
+  background-color: $background-primary;
+}
+
+.logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header {
+  background-color: $background-primary;
+}
+
+.headerTest {
+  background-color: #7f8797;
+  //background-color: #262626;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.link {
+  color: #61dafb;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bannder {
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  height: 100vh;
+  @media (max-width: $screen-size-s) {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+}

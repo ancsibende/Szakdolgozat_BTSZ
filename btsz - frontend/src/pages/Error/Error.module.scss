@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $background-light-grey;
+  width: auto;
+
+  > * > * {
+    margin-bottom: $margin-s;
+  }
+}

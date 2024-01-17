@@ -1,0 +1,142 @@
+// COLORS
+
+//backgrounds - specific
+$background-primary: #e6ebf0;
+
+//primary - specific
+$black: #000000;
+$white: #ffffff;
+
+$orange: #f2b441;
+$orange-light: #f2e205;
+$orange-dark: #f2a03d;
+
+$blue-p: #41a5f2;
+$blue-p-light: #05e2f2;
+$blue-p-dark: #3d72f2;
+$blue-steel: #4682b4;
+$blue-baby: #89cff0;
+
+$calendar-blue: #4e88c4;
+$calendar-pink: #ff99be;
+
+$text-input: #262626;
+
+$blue-nav-link: #1a213d;
+
+// backgrounds
+$background-light-grey: #f7f7f7;
+$font-disabled: rgba(26, 33, 61, 0.5);
+$input-background: #ffffff;
+$input-border-color: #bdddf4;
+$input-border-disabled-color: rgba(26, 33, 61, 0.2);
+$container-background: rgba(244, 244, 245, 0.8);
+$container-border: #ffffff0d;
+$card-background: #ffffff99;
+$card-shadow: 0px 4px 15px 0px #0000000d;
+$button-shadow: 0px 4px 15px 0px #00000040;
+$readonly-background: #e6ebf0;
+$mobile-background: #5a67a3;
+$mobile-background-darker: #384065;
+$radio-tile: rgba(0, 0, 0, 0.03);
+$modal-light: #dcdcdcde;
+$modal-dark: #00000099;
+$tab-border: rgba(0, 0, 0, 0.05);
+
+// primary
+$black: #000000;
+$white: #ffffff;
+
+$blue: #1b223c;
+$blue-light: #4d4b66;
+$blue-lighter: #78748a;
+$blue-dark: #101226;
+$blue-darker: #100c08;
+$blue-nav-link: #1a213d;
+$blue-nav-icon: #47579a;
+
+$yellow: #f3c543;
+$yellow-light: #f9d97c;
+$yellow-lighter: #fbe3a5;
+$yellow-dark: #e0aa26;
+
+$brown: #bd8f57;
+$brown-light: #d1af84;
+$brown-lighter: #dec5a6;
+$brown-dark: #855c24;
+
+$grey: #5d6873;
+$grey-light: #898e97;
+$grey-lighter: #a9abb2;
+$grey-lightest: #e4e5ea;
+$grey-dark: #3d454c;
+$grey-darker: #293036;
+$grey-deep-dark: #181e23;
+
+// secondary
+$secondary-blue-light: #bdddf4;
+$secondary-blue: #57a0d7;
+$secondary-blue-dark: #14499e;
+
+$secondary-green-light: #b3e0dc;
+$secondary-green: #24a69a;
+$secondary-green-dark: #014d41;
+
+$secondary-purple-light: #d1c3e0;
+$secondary-purple: #775ca7;
+$secondary-purple-dark: #362f8b;
+
+$secondary-pink-light: #f8bbcf;
+$secondary-pink: #ec417a;
+$secondary-pink-dark: #d5196b;
+
+$secondary-purple2-light: #aeb5dc;
+$secondary-purple2: #606aac;
+$secondary-purple2-dark: #5957a6;
+
+$secondary-red-light: #facdd2;
+$secondary-red: #ef5451;
+$secondary-red-dark: #b72025;
+
+// system
+$system-success: #0c8843;
+$system-warning: #fede00;
+$system-error: #d22027;
+
+// BREAKPOINTS
+$screen-size-xs: 400px;
+$screen-size-s: 650px;
+$screen-size-m: 768px;
+$screen-size-l: 992px;
+$screen-size-xl: 1200px;
+
+// PADDING, MARGIN, SIZES
+
+$padding-xxs: 0.25rem;
+$padding-xs: 0.5rem;
+$padding-s: 1rem;
+$padding-m: 2rem;
+$padding-l: 3rem;
+$padding-xl: 4rem;
+$padding-xxl: 5rem;
+
+$margin-xxs: 0.25rem;
+$margin-xs: 0.5rem;
+$margin-s: 1rem;
+$margin-m: 2rem;
+$margin-l: 3rem;
+$margin-xl: 4rem;
+$margin-xxl: 5rem;
+
+$font-size-xxs: 0.625rem;
+$font-size-xs: 0.75rem;
+$font-size-s: 0.875rem;
+$font-size-m: 1rem;
+$font-size-l: 1.125rem;
+$font-size-xl: 1.5rem;
+
+$header-size-mobile: 60px;
+$header-size-desktop: 90px;
+
+$modal-border-radius: 34px;
+$content-border-radius: 40px;

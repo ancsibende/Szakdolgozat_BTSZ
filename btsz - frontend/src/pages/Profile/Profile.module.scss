@@ -1,0 +1,120 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $background-light-grey;
+  width: auto;
+  min-height: 600px;
+
+  > * > * {
+    margin-bottom: $margin-s;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  margin: $margin-m 0;
+  font-family: inherit;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: $orange;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: $black;
+  cursor: pointer;
+}
+
+.tableContainer {
+  @media (max-width: $screen-size-l) {
+    overflow: scroll;
+  }
+}
+
+.noComingEvents {
+  font-style: italic;
+  letter-spacing: 0.15rem;
+}
+
+table {
+  width: 100%;
+
+  thead {
+    font-family: inherit;
+    font-weight: bold;
+  }
+}
+
+.sortButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.sortIcon {
+  width: 16px;
+  height: 16px;
+  fill: #000;
+  transform: rotate(180deg);
+}
+
+.sortIconDesc {
+  width: 16px;
+  height: 16px;
+  fill: #000;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.radioContainer {
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    label {
+      padding-left: 12px;
+    }
+  }
+}
+
+.modifyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 12px;
+}
+
+.submitContainer {
+  display: flex;
+  padding-top: 12px;
+  justify-content: center;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}

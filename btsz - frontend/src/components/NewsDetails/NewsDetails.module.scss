@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $background-light-grey;
+  width: auto;
+
+  > * > * {
+    margin-bottom: $margin-s;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  margin: $margin-m 0;
+  font-family: inherit;
+}
+
+.newsContainer {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @media (max-height: 800px) {
+    max-height: 400px;
+
+    p {
+      padding: 0px;
+    }
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: $orange;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: $black;
+  cursor: pointer;
+}

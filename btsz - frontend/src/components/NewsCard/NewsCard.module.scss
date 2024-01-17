@@ -1,0 +1,79 @@
+@import "../../variables.scss";
+
+.newsCard {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.11);
+  border-radius: 22px;
+  width: 204px;
+  max-height: 243px;
+  cursor: pointer;
+}
+
+.coverImage {
+  height: 100px;
+  border-radius: 22px 22px 0 0;
+  object-fit: cover;
+
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.highlightRibbon {
+  color: white;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 0 4px 1rem;
+}
+
+.title {
+  font-weight: 500;
+  line-height: 21px;
+  margin-top: $margin-s;
+  display: flex;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: $screen-size-m) {
+    font-size: $font-size-s;
+    margin-top: $margin-xs;
+  }
+}
+
+.lead {
+  font-size: $font-size-xs;
+  line-height: 1rem;
+  width: 168px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.date {
+  font-weight: normal;
+  font-size: $font-size-xs;
+  line-height: 16px;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: $margin-s;
+  margin-left: $margin-s;
+  margin-bottom: $margin-s;
+}
